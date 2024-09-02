@@ -11,9 +11,9 @@ function sortearTimes() {
   const jogadores = Array.from({length: numero}, (_, i) => i + 1).sort(() => Math.random() - 0.5);
   const times = [];
 
-  // Divide em times de 5
+  // Divide em times de 6
   while (jogadores.length) {
-      times.push(jogadores.splice(0, 5));
+      times.push(jogadores.splice(0, 6));
   }
 
   // Exibe os times
